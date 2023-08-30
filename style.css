@@ -24,29 +24,33 @@ main {
   }
 }
 
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Roboto", sans-serif;
+}
+
 p {
   font-size: 16px;
 }
 
 header {
-  text-align: center;
-  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 320px;
+  padding: 21px 0;
 }
-@media (max-width: 768px) {
-  header {
-    padding-left: 50px;
-  }
-}
-
 header img {
-  width: 50%;
-}
-
-.bold {
-  font-weight: bold;
+  max-width: 168px;
 }
 
 h1 {
+  font-family: "roboto", sans-serif;
   text-align: center;
   margin: 0;
   font-size: 40px;
@@ -224,6 +228,16 @@ h1 {
   }
 }
 
+.btn-new {
+  background-color: #99E2D0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: relative;
+  top: 1rem;
+  right: 0.75rem;
+}
+
 .card {
   width: 498px;
   height: 231px;
@@ -265,6 +279,8 @@ footer {
   color: white;
   display: flex;
   flex-direction: row-reverse;
+  margin-top: 70px;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
 }
 @media (max-width: 768px) {
   footer {
@@ -303,6 +319,13 @@ footer a {
     flex-direction: column-reverse;
     gap: 0;
   }
+}
+
+footer .logo-footer {
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
