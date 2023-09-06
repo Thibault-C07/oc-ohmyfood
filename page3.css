@@ -14,15 +14,6 @@ p {
   font-family: "roboto", sans-serif;
 }
 
-.head-mobile {
-  width: 100%;
-}
-@media (max-width: 768px) {
-  .head-mobile {
-    width: 110%;
-  }
-}
-
 header {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   width: 100%;
@@ -49,7 +40,7 @@ header .logo img {
   align-items: center;
   justify-content: center;
   transform: translateY(-50%);
-  font-size: 1.2rem;
+  font-size: 20px;
   color: #000;
 }
 
@@ -67,19 +58,19 @@ main img {
   align-items: center;
   background-color: #F6F6F6;
   flex-direction: column;
-  border-radius: 3rem 3rem 0 0;
+  border-radius: 50px 50px 0 0;
   margin: -40px auto;
   position: relative;
 }
 .main-container h1 {
-  font-family: "Shrikhand", cursive;
-  font-size: 1.5rem;
+  font-family: "Shrikhand";
+  font-size: 20px;
   align-items: flex-start;
 }
 .main-container i {
   display: flex;
-  font-size: 2rem;
-  padding-right: 3rem;
+  font-size: 30px;
+  padding-right: 50px;
 }
 @media (max-width: 768px) {
   .main-container {
@@ -118,58 +109,30 @@ main img {
   background: #99E2D0;
 }
 
+.card-menu .card {
+  padding: 10px;
+  max-width: 100%;
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  background: var(--white, #FFF);
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
+}
+
 .card-menu {
   display: flex;
   width: 634px;
   background: var(--white, #FFF);
   border-radius: 20px;
-}
-.card-menucard {
-  width: 350px;
-  padding: 14px 0;
-  border-radius: 0.75rem;
-  display: flex;
-  justify-content: space-between;
-}
-.card-menucard h3 {
-  font-size: 16px;
-}
-.card-menucard h4 {
-  font-size: 16px;
-}
-@media (max-width: 768px) {
-  .card-menucard h3 {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  .card-menucard p {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-  }
+  overflow: hidden;
+  cursor: pointer;
 }
 .card-menu:hover .btn-card {
   margin-right: 0px;
-  min-width: 4rem;
+  min-width: 60px;
   transition: margin-right 0.5s;
-}
-.card-menu:hover .card-content {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.card-menu:hover .card-content h3 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.card-menu:hover .card-content p {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.card-menu:hover .circle {
-  transform: rotate(360deg);
 }
 
 .btn-card {
@@ -178,7 +141,9 @@ main img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: -64px;
+  margin-right: -60px;
+  border-radius: 0 15px 15px 0;
+  overflow: hidden;
 }
 
 .circle {
@@ -190,28 +155,15 @@ main img {
   align-items: center;
   align-self: center;
   align-content: center;
-  transition: transform 0.5s;
   position: relative;
+  transition: transform 0.5s;
 }
 .circle .fas {
   color: #99E2D0;
 }
 
-.card-menu .card {
-  padding: 10px;
-  max-width: 100%;
-  overflow: hidden;
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
-  border-radius: 15.043px;
-  background: var(--white, #FFF);
-  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
-}
-
 .prix {
   display: flex;
-  align-items: center;
   align-self: flex-end;
 }
 
@@ -309,7 +261,7 @@ main img {
   text-align: center;
 }
 .btn-explore label {
-  background-color: #9356DC;
+  background-color: #9356dc;
   padding: 15px 50px;
   border-radius: 30px;
   text-align: center;
@@ -318,9 +270,9 @@ main img {
   font-weight: normal;
   font-size: 18px;
   margin: 0 auto;
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-image: linear-gradient(#ff79da, #9356dc);
   transition: background-color 250ms;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .btn-explore label:hover {
@@ -339,7 +291,7 @@ footer {
   display: flex;
   flex-direction: row-reverse;
   margin-top: 40px;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
   justify-content: flex-start;
 }
 @media (max-width: 768px) {
